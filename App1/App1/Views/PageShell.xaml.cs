@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace App1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class PageShell : ContentPage
     {
-        public Page2()
+        public PageShell()
         {
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private void BtnNext_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(Page3)}");
+
         }
     }
 }

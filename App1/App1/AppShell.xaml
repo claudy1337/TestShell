@@ -4,23 +4,26 @@
        xmlns:local="clr-namespace:App1.Views"
        Title="App1"
        x:Class="App1.AppShell">
-    
 
-    <FlyoutItem Title="Page1" Shell.FlyoutItemIsVisible="False"
-             Shell.NavBarHasShadow="False" Shell.NavBarIsVisible="False"  Icon="icon_about.png">
-        <ShellContent Route="Page1" ContentTemplate="{DataTemplate local:Page1}" />
+    <FlyoutItem Title="LoadingPage" Shell.FlyoutItemIsVisible="False"
+             Shell.NavBarHasShadow="False" Shell.NavBarIsVisible="False" Icon="icon_about.png">
+        <ShellContent Route="LoadingPage" ContentTemplate="{DataTemplate local:LoadingPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Page2" Shell.FlyoutItemIsVisible="False"
+
+
+    <FlyoutItem Title="Authorization" Shell.FlyoutItemIsVisible="False"
+             Shell.NavBarHasShadow="False" Shell.NavBarIsVisible="False" Icon="icon_about.png">
+        <ShellContent Route="Authorization" ContentTemplate="{DataTemplate local:Authorization}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Registration" Shell.FlyoutItemIsVisible="False"
              Shell.NavBarHasShadow="False" Icon="icon_about.png">
-        <ShellContent Route="Page2" ContentTemplate="{DataTemplate local:Page2}" />
+        <ShellContent Route="Registration" ContentTemplate="{DataTemplate local:Registration}" />
     </FlyoutItem>
-    
-    <FlyoutItem Title="Page3" IsVisible="True" Icon="icon_about.png">
-        <ShellContent Route="Page3" ContentTemplate="{DataTemplate local:Page3}" />
-    </FlyoutItem>
-    
-    
 
-    
+    <FlyoutItem Title="NotePage" IsVisible="True" Icon="icon_about.png">
+        <ShellContent Route="NotePage" ContentTemplate="{DataTemplate local:NotePage}" />
+    </FlyoutItem>
+
 </Shell>

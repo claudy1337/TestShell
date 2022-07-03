@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace App1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class NotePage : ContentPage
     {
-        public Page1()
+        public NotePage()
         {
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void BtnEdit_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(Page2)}");
+            await Navigation.PushAsync(new PageShell());
         }
     }
 }
